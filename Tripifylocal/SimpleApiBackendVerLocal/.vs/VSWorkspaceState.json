@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\SimpleApiBackend",
+    "\\SimpleApiBackend.Tests",
+    "\\SimpleApiBackend.Tests\\TestResults",
+    "\\SimpleApiBackend\\Controllers",
+    "\\SimpleApiBackend\\Models"
+  ],
+  "SelectedNode": "\\SimpleApiBackend.Tests\\AdminControllerTests.cs",
+  "PreviewInSolutionExplorer": false
+}

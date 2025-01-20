@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stwórz Wyjazd - TRIPIFY</title>
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="navbar.js" defer></script>
+    <script src="create-trip.js" defer></script>
+</head>
+<body class="gradient-background">
+    <header>
+        <div class="logo">
+            <a href="index.html">TRIPIFY</a>
+        </div>
+        <button id="menu-toggle" class="menu-toggle">☰</button>
+        <nav id="navbar">
+            <ul class="menu">
+                <li id="auth-button"><a href="login.html">Zaloguj</a></li>
+                <li><a href="profile.html">Mój Profil</a></li>
+                <li id="debt-button"><a href="debts.html">Długi</a></li>
+                <li id="notificationsButton"><a href="notifications.html">Powiadomienia</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="profile-main">
+        <div class="profile-card">
+            <h1>Stwórz nowy wyjazd</h1>
+            <form id="trip-form">
+                <div class="form-group">
+                    <label for="trip-name">Nazwa wyjazdu:</label><br>
+                    <input type="text" id="trip-name" name="trip-name" class="form-control" placeholder="Podaj nazwę wyjazdu" required>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="trip-description">Opis wyjazdu:</label><br>
+                    <textarea id="trip-description" name="trip-description" class="form-control" rows="4" placeholder="Opisz wyjazd" required></textarea>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="start-date">Data rozpoczęcia:</label><br>
+                    <input type="date" id="start-date" name="start-date" class="form-control" min="2024-01-12" max="2025-12-31" required>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="end-date">Data zakończenia:</label><br>
+                    <input type="date" id="end-date" name="end-date" class="form-control" min="2024-02-12" max="2026-12-31" required>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="invite-users">Zaproś użytkowników (oddzieleni przecinkiem):</label><br>
+                    <input type="text" id="invite-users" name="invite-users" class="form-control" placeholder="Podaj nazwy użytkowników">
+                </div>
+
+                <button type="submit" class="btn btn-success">Stwórz wyjazd</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TRIPIFY. <a href="report-error.html" class="text-white text-decoration-none">Zgłoś bład🦟</a></p>
+    </footer>
+</body>
+</html>

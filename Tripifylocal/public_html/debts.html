@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIPIFY - Twoje długi</title>
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="gradient-background">
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html">TRIPIFY</a>
+        </div>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Otwórz menu">☰</button>
+        <nav id="navbar" class="navigation">
+            <ul class="menu">
+                <li id="auth-button"><a href="login.html">Zaloguj</a></li>
+                <li><a href="profile.html">Mój Profil</a></li>
+                <li id="debt-button"><a href="debts.html">Długi</a></li>
+                <li id="notificationsButton"><a href="notifications.html">Powiadomienia</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="card">
+            <h2>Twoje Długi</h2>
+            <table id="debts-you-owe" class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Wierzyciel</th>
+                        <th>Kwota</th>
+                        <th>Waluta</th>
+                        <th>Opis</th>
+                        <th>Metoda Płatności</th>
+                        <th>Akcje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                </tbody>
+            </table>
+        </section>
+
+        <section class="card">
+            <h2>Podsumowanie Długów</h2>
+            <table id="debts-summary" class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Użytkownik</th>
+                        <th>Kwota</th>
+                        <th>Waluta</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+            
+        </section>
+
+        <section class="card">
+            <h2>Twoi Wierzyciele</h2>
+            <table id="debts-owed-to-you" class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Dłużnik</th>
+                        <th>Kwota</th>
+                        <th>Waluta</th>
+                        <th>Opis</th>
+                        <th>Akcje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                
+                </tbody>
+            </table>
+        </section>
+        
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2024 TRIPIFY. <a href="report-error.html" class="text-white text-decoration-none">Zgłoś bład🦟</a></p>
+    </footer>
+    
+    <script src="debts.js" defer></script>
+    <script src="navbar.js" defer></script>
+    <script src="debtperuser.js" defer></script>
+</body>
+</html>

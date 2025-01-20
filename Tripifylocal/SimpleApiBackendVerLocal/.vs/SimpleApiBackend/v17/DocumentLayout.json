@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Projekt_grupa_G\\Tripifylocal\\SimpleApiBackendVerLocal\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CBBA0824-8094-4360-B449-4460B45ACAA3}|SimpleApiBackend\\SimpleApiBackend.csproj|c:\\projekt_grupa_g\\tripifylocal\\simpleapibackendverlocal\\simpleapibackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBBA0824-8094-4360-B449-4460B45ACAA3}|SimpleApiBackend\\SimpleApiBackend.csproj|solutionrelative:simpleapibackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBBA0824-8094-4360-B449-4460B45ACAA3}|SimpleApiBackend\\SimpleApiBackend.csproj|c:\\projekt_grupa_g\\tripifylocal\\simpleapibackendverlocal\\simpleapibackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CBBA0824-8094-4360-B449-4460B45ACAA3}|SimpleApiBackend\\SimpleApiBackend.csproj|solutionrelative:simpleapibackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBBA0824-8094-4360-B449-4460B45ACAA3}|SimpleApiBackend\\SimpleApiBackend.csproj|c:\\projekt_grupa_g\\tripifylocal\\simpleapibackendverlocal\\simpleapibackend\\properties\\publishprofiles\\folderprofile.pubxml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{CBBA0824-8094-4360-B449-4460B45ACAA3}|SimpleApiBackend\\SimpleApiBackend.csproj|solutionrelative:simpleapibackend\\properties\\publishprofiles\\folderprofile.pubxml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBBA0824-8094-4360-B449-4460B45ACAA3}|SimpleApiBackend\\SimpleApiBackend.csproj|c:\\projekt_grupa_g\\tripifylocal\\simpleapibackendverlocal\\simpleapibackend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CBBA0824-8094-4360-B449-4460B45ACAA3}|SimpleApiBackend\\SimpleApiBackend.csproj|solutionrelative:simpleapibackend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBBA0824-8094-4360-B449-4460B45ACAA3}|SimpleApiBackend\\SimpleApiBackend.csproj|c:\\projekt_grupa_g\\tripifylocal\\simpleapibackendverlocal\\simpleapibackend\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CBBA0824-8094-4360-B449-4460B45ACAA3}|SimpleApiBackend\\SimpleApiBackend.csproj|solutionrelative:simpleapibackend\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBBA0824-8094-4360-B449-4460B45ACAA3}|SimpleApiBackend\\SimpleApiBackend.csproj|c:\\projekt_grupa_g\\tripifylocal\\simpleapibackendverlocal\\simpleapibackend\\simpleapibackend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{CBBA0824-8094-4360-B449-4460B45ACAA3}|SimpleApiBackend\\SimpleApiBackend.csproj|solutionrelative:simpleapibackend\\simpleapibackend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Projekt_grupa_G\\Tripifylocal\\SimpleApiBackendVerLocal\\SimpleApiBackend\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "SimpleApiBackend\\appsettings.Development.json",
+              "ToolTip": "C:\\Projekt_grupa_G\\Tripifylocal\\SimpleApiBackendVerLocal\\SimpleApiBackend\\appsettings.Development.json",
+              "RelativeToolTip": "SimpleApiBackend\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-20T15:43:57.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SimpleApiBackend.http",
+              "DocumentMoniker": "C:\\Projekt_grupa_G\\Tripifylocal\\SimpleApiBackendVerLocal\\SimpleApiBackend\\SimpleApiBackend.http",
+              "RelativeDocumentMoniker": "SimpleApiBackend\\SimpleApiBackend.http",
+              "ToolTip": "C:\\Projekt_grupa_G\\Tripifylocal\\SimpleApiBackendVerLocal\\SimpleApiBackend\\SimpleApiBackend.http",
+              "RelativeToolTip": "SimpleApiBackend\\SimpleApiBackend.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-01-20T15:43:50.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FolderProfile.pubxml",
+              "DocumentMoniker": "C:\\Projekt_grupa_G\\Tripifylocal\\SimpleApiBackendVerLocal\\SimpleApiBackend\\Properties\\PublishProfiles\\FolderProfile.pubxml",
+              "RelativeDocumentMoniker": "SimpleApiBackend\\Properties\\PublishProfiles\\FolderProfile.pubxml",
+              "ToolTip": "C:\\Projekt_grupa_G\\Tripifylocal\\SimpleApiBackendVerLocal\\SimpleApiBackend\\Properties\\PublishProfiles\\FolderProfile.pubxml",
+              "RelativeToolTip": "SimpleApiBackend\\Properties\\PublishProfiles\\FolderProfile.pubxml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-01-20T15:41:57.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Projekt_grupa_G\\Tripifylocal\\SimpleApiBackendVerLocal\\SimpleApiBackend\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "SimpleApiBackend\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Projekt_grupa_G\\Tripifylocal\\SimpleApiBackendVerLocal\\SimpleApiBackend\\Properties\\launchSettings.json",
+              "RelativeToolTip": "SimpleApiBackend\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-20T15:41:48.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Projekt_grupa_G\\Tripifylocal\\SimpleApiBackendVerLocal\\SimpleApiBackend\\appsettings.json",
+              "RelativeDocumentMoniker": "SimpleApiBackend\\appsettings.json",
+              "ToolTip": "C:\\Projekt_grupa_G\\Tripifylocal\\SimpleApiBackendVerLocal\\SimpleApiBackend\\appsettings.json",
+              "RelativeToolTip": "SimpleApiBackend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-20T15:36:10.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Projekt_grupa_G\\Tripifylocal\\SimpleApiBackendVerLocal\\SimpleApiBackend\\Program.cs",
+              "RelativeDocumentMoniker": "SimpleApiBackend\\Program.cs",
+              "ToolTip": "C:\\Projekt_grupa_G\\Tripifylocal\\SimpleApiBackendVerLocal\\SimpleApiBackend\\Program.cs",
+              "RelativeToolTip": "SimpleApiBackend\\Program.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T15:35:33.049Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

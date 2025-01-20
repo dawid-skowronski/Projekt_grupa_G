@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaproszenia - TRIPIFY</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    <script src="navbar.js" defer></script>
+    <script src="invitations.js" defer></script>
+    <script src="payments.js" defer></script>
+</header>
+<body class="gradient-background">
+    <header>
+        <div class="logo">
+            <a href="index.html">TRIPIFY</a>
+        </div>
+        <button id="menu-toggle" class="menu-toggle">☰</button>
+        <nav id="navbar">
+            <ul class="menu">
+                <li id="auth-button"><a href="login.html">Zaloguj</a></li>
+                <li><a href="profile.html">Mój Profil</a></li>
+                <li id="debt-button"><a href="debts.html">Długi</a></li>
+                <li id="notificationsButton"><a href="notifications.html">Powiadomienia</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="profile-main">
+    <div class="container" >
+        <h2>Twoje Zaproszenia do wyjazdów</h2>
+        <div id="invitations-container">
+
+        </div>
+    
+    </div>
+    </main>
+
+
+    <main class="notifications-main">
+        <div class="container">
+            <h2>Zgłoszenia płatności</h2>
+            <div id="payment-requests-container">
+                <p class="loading-spinner">Ładowanie zgłoszeń...</p>
+            </div>
+        </div>
+    </main>
+    
+
+    <footer>
+        <p>&copy; 2024 TRIPIFY. <a href="report-error.html" class="text-white text-decoration-none">Zgłoś bład🦟</a></p>
+    </footer>
+</body>
+</html>

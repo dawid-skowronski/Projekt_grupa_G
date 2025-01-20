@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zgłoś błąd - TRIPIFY</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="gradient-background">
+    <header>
+        <div class="logo">
+            <a href="index.html">TRIPIFY</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <h2>Zgłoś błąd</h2>
+            <p>Jeśli napotkałeś problem, wypełnij formularz i wyślij zgłoszenie.</p>
+            <form id="error-form">
+                <label for="user-email">Twój e-mail:</label>
+                <input type="email" id="user-email" name="email" required>
+            
+                <label for="error-subject">Temat:</label>
+                <input type="text" id="error-subject" name="subject" required>
+            
+                <label for="error-description">Opis Błędu:</label>
+                <textarea id="error-description" name="description" required></textarea>
+            
+                <button type="submit" class="btn-primary">Wyślij zgłoszenie</button>
+            </form>
+            
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TRIPIFY. <a href="index.html" class="text-white text-decoration-none">Powrót na stronę główną</a></p>
+
+    </footer>
+
+    <script src="report-error.js"></script>
+</body>
+</html>

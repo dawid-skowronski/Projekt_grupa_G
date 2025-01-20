@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIPIFY - Strona Główna</title>
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta property="og:title" content="Tripify - Your Travel Companion" />
+    <meta property="og:description" content="Discover the best trips, manage your travel expenses, and more with Tripify!" />
+    <meta property="og:url" content="https://projekt-tripfy.pl/" />
+    <meta property="og:image" content="https://projekt-tripfy.pl/tripify-baner.jpeg" />
+    <meta property="og:type" content="website" />
+</head>
+<body class="gradient-background">
+    <header>
+        <div class="logo">
+            <a href="index.html">TRIPIFY</a>
+        </div>
+        <button id="menu-toggle" class="menu-toggle">☰</button>
+        <nav id="navbar">
+            <ul class="menu">
+                <li id="auth-button"><a href="login.html">Zaloguj</a></li>
+                <li id="register-button"><a href="register.html">Zarejestruj</a></li>
+                <li id="profile-button" style="display: none;"><a href="profile.html">Mój Profil</a></li>
+                <li id="debt-button"><a href="debts.html">Długi</a></li>
+                <li id="notificationsButton"><a href="notifications.html">Powiadomienia</a>
+                <li id="admin-panel-button" style="display: none;"></li>
+                </li>
+            
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 class="hero-title">Witamy w TRIPIFY</h1>
+            <p class="hero-subtitle">Proste rozliczanie wyjazdów w jednym miejscu</p>
+            <div class="buttons">
+                <a href="create-trip.html" id="create-trip-button" class="btn btn-secondary" style="display: none;">Stwórz wyjazd</a>
+                <a href="jointrip.html" id="join-trip-button" class="btn btn-secondary" style="display: none;">Dołącz do wyjazdu</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TRIPIFY. <a href="report-error.html" class="text-white text-decoration-none">Zgłoś bład🦟</a></p>
+    </footer>
+    <script src="navbar.js" defer></script>
+</body>
+</html>

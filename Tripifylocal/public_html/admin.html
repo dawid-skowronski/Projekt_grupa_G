@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIPIFY - Panel Administratora</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer>
+        // Funkcja do pokazywania odpowiednich sekcji
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll(".admin-section");
+            sections.forEach(section => section.style.display = "none"); // Ukryj wszystkie sekcje
+            document.getElementById(sectionId).style.display = "block"; // Pokaż wybraną sekcję
+        }
+    </script>
+</head>
+
+<body class="gradient-background">
+    <button id="back" class="btn btn-secondary" onclick="window.location.href='index.html';">Wróć</button>
+    <main class="admin-main">
+        <div class="admin-card">
+            <h1>Panel Administratora</h1>
+            <!-- Przycisk 1: Pobierz użytkowników -->
+            <button class="btn btn-primary btn-block" onclick="showSection('users-section')">Pokaż użytkowników</button>
+
+            <!-- Przycisk 2: Zmień rolę użytkownika -->
+            <button class="btn btn-secondary btn-block" onclick="showSection('change-role-section')">Zmień rolę użytkownika</button>
+
+            <!-- Przycisk 3: Usuń użytkownika -->
+            <button class="btn btn-danger btn-block" onclick="showSection('delete-user-section')">Usuń użytkownika</button>
+
+            <!-- Przycisk 4: Edytuj wyjazd -->
+            <button class="btn btn-secondary btn-block" onclick="showSection('edit-trip-section')">Edytuj wyjazd</button>
+
+            <!-- Przycisk 5: Usuń wyjazd -->
+            <button class="btn btn-danger btn-block" onclick="showSection('delete-trip-section')">Usuń wyjazd</button>
+
+            <!-- Przycisk 6: Pokaż wyjazdy użytkownika -->
+            <button class="btn btn-primary btn-block" onclick="showSection('user-trips-section')">Pokaż wyjazdy użytkownika</button>
+        </div>
+
+        <!-- Sekcje -->
+        <div id="users-section" class="admin-section" style="display: none;">
+            <h2>Lista użytkowników</h2>
+            <div id="users-list">
+                <p class="loading-spinner">Ładowanie użytkowników...</p>
+            </div>
+            <button class="btn btn-secondary" onclick="loadUsers()">Odśwież listę</button>
+        </div>
+
+        <div id="change-role-section" class="admin-section" style="display: none;">
+            <h2>Zmień rolę użytkownika</h2>
+            <form id="update-role-form" onsubmit="updateUserRole(event)">
+                <label for="user-id">ID Użytkownika:</label>
+                <input type="number" id="user-id" name="user-id" required>
+                <label for="new-role">Nowa rola:</label>
+                <input type="text" id="new-role" name="new-role" required>
+                <button class="btn btn-secondary" type="submit">Zmień rolę</button>
+            </form>
+        </div>
+
+        <div id="delete-user-section" class="admin-section" style="display: none;">
+            <h2>Usuń użytkownika</h2>
+            <form id="delete-user-form" onsubmit="deleteUser(event)">
+                <label for="delete-user-id">ID Użytkownika:</label>
+                <input type="number" id="delete-user-id" name="delete-user-id" required>
+                <button class="btn btn-danger" type="submit">Usuń</button>
+            </form>
+        </div>
+
+        <div id="edit-trip-section" class="admin-section" style="display: none;">
+            <h2>Edytuj wyjazd</h2>
+            <form id="edit-trip-form" onsubmit="editTrip(event)">
+                <label for="trip-id">ID Wyjazdu:</label>
+                <input type="number" id="trip-id" name="trip-id" >
+
+                <label for="trip-name">Nazwa:</label>
+                <input type="text" id="trip-name" name="trip-name" >
+
+                <label for="trip-description">Opis:</label>
+                <textarea id="trip-description" name="trip-description" ></textarea>
+
+                <label for="trip-start-date">Data rozpoczęcia:</label>
+                <input type="date" id="trip-start-date" name="trip-start-date" >
+
+                <label for="trip-end-date">Data zakończenia:</label>
+                <input type="date" id="trip-end-date" name="trip-end-date" >
+
+                <button class="btn btn-secondary" type="submit">Zaktualizuj wyjazd</button>
+            </form>
+        </div>
+
+        <div id="delete-trip-section" class="admin-section" style="display: none;">
+            <h2>Usuń wyjazd</h2>
+            <form id="delete-trip-form" onsubmit="deleteTrip(event)">
+                <label for="delete-trip-id">ID Wyjazdu:</label>
+                <input type="number" id="delete-trip-id" name="delete-trip-id" required>
+                <button class="btn btn-danger" type="submit">Usuń</button>
+            </form>
+        </div>
+
+        <div id="user-trips-section" class="admin-section" style="display: none;">
+            <h2>Wyjazdy użytkownika</h2>
+            <form id="user-trips-form" onsubmit="loadUserTrips(event)">
+                <label for="user-trips-id">ID Użytkownika:</label>
+                <input type="number" id="user-trips-id" name="user-trips-id" required>
+                <button class="btn btn-secondary" type="submit">Pokaż wyjazdy</button>
+            </form>
+            <div id="user-trips">
+                <p class="loading-spinner">Tutaj pojawią się wyjazdy użytkownika...</p>
+            </div>
+        </div>
+    </main>
+    <script src="admin.js" defer></script>
+</body>
+
+</html>

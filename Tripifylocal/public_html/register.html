@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zarejestruj się - TRIPIFY</title>
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body class="gradient-background">
+  <header>
+    <div class="logo">
+        <a href="index.html">TRIPIFY</a>
+    </div>
+    <button id="menu-toggle" class="menu-toggle">☰</button>
+    <nav id="navbar">
+        <ul class="menu">
+            <li id="auth-button"><a href="login.html">Zaloguj</a></li>
+            <li id="register-button"><a href="register.html">Zarejestruj</a></li>
+            <li id="notificationsButton"><a href="notifications.html">Powiadomienia</a>
+            
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <section class="form-section">
+            <h1>Zarejestruj się</h1>
+            <form id="register-form">
+                <label for="register-email">E-mail:</label>
+                <input type="email" id="register-email" name="email" class="form-control" placeholder="Podaj swój email" required>
+
+                <label for="register-username">Nazwa użytkownika:</label>
+                <input type="text" id="register-username" name="username" class="form-control" placeholder="Podaj nazwę użytkownika" required>
+
+                <label for="register-password">Hasło:</label>
+                <input type="password" id="register-password" name="password" class="form-control" placeholder="Podaj hasło" required>
+
+                <label for="register-confirm-password">Potwierdź hasło:</label>
+                <input type="password" id="register-confirm-password" name="confirm-password" class="form-control" placeholder="Powtórz hasło" required>
+
+                <button type="submit">Zarejestruj</button>
+            </form>
+            <p class="redirect-link">
+              <a href="login.html">Masz już konto? Zaloguj się</a>
+          </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TRIPIFY. <a href="report-error.html" class="text-white text-decoration-none">Zgłoś bład🦟</a></p>
+    </footer>
+
+    <script src="register.js" defer></script>
+    <script src="navbar.js" defer></script>
+</body>
+</html>

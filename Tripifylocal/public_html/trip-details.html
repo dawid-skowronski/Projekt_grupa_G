@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szczegóły wyjazdu - TRIPIFY</title>
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="gradient-background">
+    <header>
+        <div class="logo">
+            <a href="index.html">TRIPIFY</a>
+        </div>
+        <button id="menu-toggle" class="menu-toggle">☰</button>
+        <nav id="navbar">
+            <ul class="menu">
+                <li id="auth-button"><a href="login.html">Zaloguj</a></li>
+                <li><a href="profile.html">Mój Profil</a></li>
+                <li id="debt-button"><a href="debts.html">Długi</a></li>
+                <li id="notificationsButton"><a href="notifications.html">Powiadomienia</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="trip-details">
+                <h1>Szczegóły wyjazdu</h1>
+                <div id="trip-info">
+                    <p><strong>Nazwa wyjazdu:</strong> <span id="trip-name"></span></p>
+                    <p><strong>Opis:</strong> <span id="description"></span></p>
+                    <p><strong>Kod dołączenia:</strong> <span id="secretcode"></span></p>
+                    <p><strong>Data rozpoczęcia:</strong> <span id="start-date"></span></p>
+                    <p><strong>Data zakończenia:</strong> <span id="end-date"></span></p>
+                    <h3>Członkowie:</h3>
+                    <ul id="members-list"></ul>
+                </div>
+                <form>
+                <div class="form-group mt-2">
+                    <label for="invite-users">Zaproś użytkowników (oddzieleni przecinkiem):</label><br><br>
+                    <input type="text" id="invite-users" name="invite-users" class="form-control" placeholder="Podaj nazwy użytkowników" required>
+                </div>
+            </form><br>
+
+                <button type="submit" id="send-invite-button" class="btn btn-secondary">Zaproś</button>
+
+                <button type="submit" id="create-expense-button" class="btn btn-secondary">Stwórz wydatek</button>
+
+                <button id="expenses-button" class="btn btn-secondary">Wydatki</button> <br><br>
+
+                <button id="summary-button" class="btn btn-secondary">Podsumowanie</button>
+
+                <button id="back-button" type="button" class="btn btn-secondary">Wróć</button> <br><br>
+                
+                <button id="leave-trip-button" type="button" class="btn btn-danger">Opuść wyjazd</button>
+
+                
+            </section>
+            
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TRIPIFY. <a href="report-error.html" class="text-white text-decoration-none">Zgłoś bład🦟</a></p>
+    </footer>
+    <script src="navbar.js" defer></script>
+    <script src="trip-details.js" defer></script>
+</body>
+</html>

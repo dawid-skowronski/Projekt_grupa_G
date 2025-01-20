@@ -1,0 +1,37 @@
+<Directory "/var/www/html">
+    <LimitExcept GET POST PUT DELETE>
+    </LimitExcept>
+</Directory>
+
+# Włącz mod_rewrite
+RewriteEngine On
+
+# Usuwanie rozszerzenia .html
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# Opcjonalnie przekierowanie strony głównej
+DirectoryIndex index.html
+
+RewriteEngine On
+RewriteBase /
+
+# Allow robots.txt to pass through
+RewriteRule ^robots.txt - [L]
+
+# Allow social media crawlers to work
+RewriteCond %{HTTP_USER_AGENT} (facebookexternalhit/[0-9]|Twitterbot)
+RewriteRule ^(.+)$ /crawlers/crawlers.php?page=$1 [NC,L]
+
+# Do not redirect API calls (like Facebook login callback)
+RewriteCond %{REQUEST_URI} ^/api/ [NC]
+RewriteRule ^ - [L]
+
+# Preserve query strings for all requests
+RewriteCond %{QUERY_STRING} .
+RewriteRule ^ - [QSA,L]
+
+# If the requested resource doesn't exist, use index.html
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-f
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-d
+RewriteRule ^ /index.html [L]

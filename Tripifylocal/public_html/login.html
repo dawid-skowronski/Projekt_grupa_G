@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaloguj się - TRIPIFY</title>
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="gradient-background">
+    <header>
+        <div class="logo">
+            <a href="index.html">TRIPIFY</a>
+        </div>
+        <button id="menu-toggle" class="menu-toggle">☰</button>
+        <nav id="navbar">
+            <ul class="menu">
+                <li id="auth-button"><a href="login.html">Zaloguj</a></li>
+                <li id="register-button"><a href="register.html">Zarejestruj</a></li>
+                <li id="debt-button"><a href="debts.html">Długi</a></li>
+                <li id="notificationsButton"><a href="notifications.html">Powiadomienia</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+            
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section" style="max-width: 500px;">
+            <h1>Zaloguj się</h1>
+            <form id="login-form">
+                <label for="login-username">Nazwa użytkownika:</label>
+                <input type="text" id="login-username" name="username" required>
+                
+                <label for="login-password">Hasło:</label>
+                <div class="password-container">
+                    <input type="password" id="login-password" name="password" required>
+                    <button type="button" class="toggle-password" onclick="togglePasswordVisibility('login-password')">
+                        👁️
+                    </button>
+                </div>
+                
+                <div class="remember-forgot">
+                    <div class="remember-me">
+                        <label class="switch">
+                            <input type="checkbox" id="remember-me" name="remember-me">
+                            <span class="slider round"></span>
+                        </label>
+                        <span>Zapamiętaj mnie</span>
+                    </div>
+                    <a href="forgot-password.html" class="forgot-password-link">Nie pamiętam hasła</a>
+                </div>
+                
+                <button type="submit">Zaloguj</button>
+            </form>
+            
+                <button id="facebook-login-button" onclick="facebookLogin()">
+                    Zaloguj przez Facebook
+                </button>
+                
+            
+                <p class="redirect-link">
+                    <a href="register.html">Nie masz jeszcze konta? Zarejestruj się</a>
+                </p>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TRIPIFY. <a href="report-error.html" class="text-white text-decoration-none">Zgłoś bład🦟</a></p>
+    </footer>
+    <script src="login.js" defer></script>
+    <script src="navbar.js" defer></script>
+    <script>
+    if (window.location.href.includes("error")) {
+    window.location.href = "login.html"; 
+    }
+    </script>
+</body>
+</html>

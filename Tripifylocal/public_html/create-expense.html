@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stwórz Wydatek - TRIPIFY</title>
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="gradient-background">
+    <header>
+        <div class="logo">
+            <a href="index.html">TRIPIFY</a>
+        </div>
+        <button id="menu-toggle" class="menu-toggle">☰</button>
+        <nav id="navbar">
+            <ul class="menu">
+                <li id="auth-button"><a href="login.html">Zaloguj</a></li>
+                <li id="register-button"><a href="register.html">Zarejestruj</a></li>
+                <li id="profile-button" style="display: none;"><a href="profile.html">Mój Profil</a></li>
+                <li id="debt-button"><a href="debts.html">Długi</a></li>
+                <li id="notificationsButton"><a href="notifications.html">Powiadomienia</a>
+                <li id="admin-panel-button" style="display: none;"></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="create-expense">
+                <h1>Stwórz Wydatek</h1>
+                <form id="expense-form">
+                    <div class="form-group">
+                        <label for="expense-name">Opis wydatku:</label>
+                        <input type="text" id="expense-name" name="expense-name" class="form-control" placeholder="Podaj opis wydatku" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="expense-category">Kategoria:</label>
+                        <select id="expense-category" name="expense-category" class="form-control" required>
+                            <option value="">Wybierz kategorię</option>
+                            <option value="transport">Transport</option>
+                            <option value="jedzenie">Jedzenie</option>
+                            <option value="zakwaterowanie">Zakwaterowanie</option>
+                            <option value="rozrywka">Rozrywka</option>
+                            <option value="inne">Inne</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="expense-cost">Kwota:</label>
+                        <input type="number" id="expense-cost" name="expense-cost" class="form-control" placeholder="Podaj kwotę" step="0.01" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="expense-currency">Waluta:</label>
+                        <select id="expense-currency" name="expense-currency" class="form-control" required>
+                            <option value="PLN">PLN</option>
+                            <option value="EUR">EUR</option>
+                            <option value="USD">USD</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="expense-date">Data:</label>
+                        <input type="date" id="expense-date" name="expense-date" class="form-control" min="2024-01-12" max="2025-12-31" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="expense-location">Lokalizacja:</label>
+                        <input type="text" id="expense-location" name="expense-location" class="form-control" placeholder="Podaj lokalizację">
+                    </div>
+
+                    <div class="form-buttons">
+                        <button type="submit" class="btn btn-success">Zapisz Wydatek</button>
+                        <button type="button" id="cancel-button" class="btn btn-secondary">Anuluj</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TRIPIFY. <a href="report-error.html" class="text-white text-decoration-none">Zgłoś bład🦟</a></p>
+    </footer>
+    <script src="create-expesne.js" defer></script>
+    <script src="navbar.js" defer></script>
+</body>
+</html>

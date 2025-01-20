@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "O7BbiFHVz3Jb9vNi77TTlovWw8hkTEXMGjqHC0q2+8A=",
+  "Source": "SimpleApiBackend",
+  "BasePath": "_content/SimpleApiBackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dołącz do wyjazdu - TRIPIFY</title>
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="navbar.js" defer></script>
+</head>
+<body class="gradient-background">
+    <header>
+        <div class="logo">
+            <a href="index.html">TRIPIFY</a>
+        </div>
+        <button id="menu-toggle" class="menu-toggle">☰</button>
+        <nav id="navbar">
+            <ul class="menu">
+                <li id="auth-button"><a href="login.html">Zaloguj</a></li>
+                <li><a href="profile.html">Mój Profil</a></li>
+                <li id="debt-button"><a href="debts.html">Długi</a></li>
+                <li id="notificationsButton"><a href="notifications.html">Powiadomienia</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h1>Dołącz do Wyjazdu</h1>
+            <form id="join-trip-form">
+                <label for="trip-code">Kod Wyjazdu:</label>
+                <input type="text" id="trip-code" name="trip-code" class="form-control" placeholder="Wpisz kod wyjazdu" required>
+
+                <div class="buttons">
+                    <button type="submit" class="btn btn-success">Dołącz</button>
+                    <button id="back-button" type="button" class="btn btn-secondary">Wróć</button>
+                </div>
+            </form>
+            <p id="response-message" class="mt-3"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TRIPIFY. <a href="report-error.html" class="text-white text-decoration-none">Zgłoś bład🦟</a></p>
+    </footer>
+
+    <script src="jointrip.js" defer></script>
+</body>
+</html>
